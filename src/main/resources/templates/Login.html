@@ -13,7 +13,7 @@
 
         <ul>
 
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/bem-vindo">Home</a></li>
             <li><a href="Produtos.html">Produtos e serviços</a></li>
             <li><a href="Solicitacoes.html">Solicitações</a></li>
             <li><a href="Sobre.html">Sobre</a></li>
@@ -23,50 +23,45 @@
 
     </nav>
 
-    
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-    <div id="login">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
 
-        <form class="card">
-
-            <div class="card-header">
-
-                <h2>Login</h2>
-
-            </div>
-
-            <div class="card-content">
-
-                <div class="card-content-area">
-
-                    <label for="usuario">Usuário</label>
-
-                    <input type="text" id="usuario" autocomplete="off">
-
-                </div>
-
-                <div class="card-content-area">
-
-                    <label for="password">Senha</label>
-
-                    <input type="password" id="password" autocomplete="off">
-                    
-                </div>
-
-            </div>
-
-            <div class="card-footer">
-
-                <button type="submit" value="login" class="submit">LOGIN</button>
-
-                <a href="#" class="recuperar_senha">Esqueceu a Senha?</a>
-
-            </div>
-
-        </form>
-        
-
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h2>Login</h2>
     </div>
+
+    <!-- Login Form -->
+    <form method="post">
+        <div class="form-group">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail">
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
+        </div>
+
+        <div class="cadastro">
+            <p>Não tem cadastro? Clique aqui.</p>
+        </div>
+
+      <button type="submit" class="btn btn-primary">Entrar</button>
+      
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
     
 </body>
 </html>

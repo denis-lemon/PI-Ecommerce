@@ -17,30 +17,38 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
+    private String cpf;
     private String email;
     private String telefone;
     private String senha;
+    private boolean ativo = true;
 
-    public Usuario(){
+    
+    public Usuario() {
 
     }
 
-    public Usuario(long id, String nome, String email, String telefone, String senha) {
+    
+
+    public Usuario(long id, String nome, String cpf, String email, String telefone, String senha, boolean ativo) {
         this.id = id;
         this.nome = nome;
+        this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
         this.senha = senha;
+        this.ativo = ativo;
     }
+
 
     public long getId() {
         return id;
     }
-
+    
     public void setId(long id) {
         this.id = id;
     }
-
+    
     public String getNome() {
         return nome;
     }
@@ -48,11 +56,19 @@ public class Usuario implements Serializable {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    
+    public String getCpf() {
+        return cpf;
+    }
+    
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
     public String getEmail() {
         return email;
     }
-
+    
     public void setEmail(String email) {
         this.email = email;
     }
@@ -71,6 +87,14 @@ public class Usuario implements Serializable {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
     }
 
     @Override
@@ -95,5 +119,7 @@ public class Usuario implements Serializable {
         return true;
     }
 
-    
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
 }

@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,17 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.senacre.ecommerce.Model.Usuario;
-import com.senacre.ecommerce.Service.UserService;
+import com.senacre.ecommerce.Service.UserService; 
 
-@Controller
 @RestController
-@RequestMapping(value = "/usuarios")
+@RequestMapping(value = "/user") 
 public class UsuarioResource {
 
-   @Autowired
+    @Autowired
     private UserService service;
 
-     @GetMapping
+    @GetMapping
     public ResponseEntity<List<Usuario>> findAll(){
         List<Usuario> list = service.findAll();
         return ResponseEntity.ok().body(list);
@@ -44,18 +42,4 @@ public class UsuarioResource {
         return ResponseEntity.created(uri).body(obj);
     }
 
-    
-   /* @GetMapping("/cadastro")
-    public String cadastro() {
-        return "Cadastro";
-    } 
-
-    @PostMapping
-    public String result(@ModelAttribute Usuario user){
-        return "result";
-    } 
-    */
-
-
-    
 }

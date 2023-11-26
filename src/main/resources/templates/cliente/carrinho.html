@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br" publica-nav:fragmentos="{cliente/fragmentos/publica-nav}" xmlns:th="http://www.thymeleaf.org"
+      xmlns:publica-nav="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon Soft - Carrinho</title>
+    <link rel="stylesheet" href="static/carrinho.css">
+</head>
+<body>
+<nav id="menu">
+    <ul>
+        <li><a href="/bem-vindo">Home</a></li>
+        <li><a href="Produtos.html">Produtos</a></li>
+        <li><a href="Solicitacoes.html">Solicitações</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/login">Entrar ou cadastrar</a></li>
+    </ul>
+</nav>
+<div class = "container" publica-nav:fragmentos="corp">
+    <div class="col-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"> </th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Estoque</th>
+                    <th scope="col" class="text-center">Quantidade</th>
+                    <th scope="col" class="text-right">Preço</th>
+                    <th> </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                    <td>Product Name Dada</td>
+                    <td>Em Estoque</td>
+                    <td><button class="btn btn-sm btn-info"><i class="fa fa-plus "></i> </button></td>
+                    <td><button class="btn btn-sm btn-info"><i class="fa fa-minus "></i> </button></td>
+                    <td class="text-right">124,90 €</td>
+                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Sub-Total</td>
+                    <td class="text-right">255,90 R$</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Frete</td>
+                    <td class="text-right">6,90 R$</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><strong>Total</strong></td>
+                    <td class="text-right"><strong>346,90 R$</strong></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col mb-2">
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <button class="btn btn-block btn-light">Continue Comprando</button>
+                </div>
+                <div class="col-sm-12 col-md-6 text-right">
+                    <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,55 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav id="menu">
 
         <ul>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="Produtos.html">Produtos e serviços</a></li>
+            <li><a href="/bem-vindo">Home</a></li>
+            <li><a href="/lista-produtos">Produtos</a></li>
             <li><a href="Solicitacoes.html">Solicitações</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="Login.html">Entrar ou cadastrar</a></li>
-    
+            <li><a href="/cliente/carrinho">Carrinho</a></li>
+            <li><a href="/login">Entrar ou cadastrar</a></li>
+
         </ul>
 
     </nav>
 
     <H1>Seja bem vindo, sou a Home</H1>
-    
+
+    <div>
+
+        <div>
+            <div class="container">
+                <h3>Produtos em Destaque</h3>
+        
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+        
+                    </div>
+                    <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+        
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="scripts.js"></script>
+        </div>
+    </div>
+
 </body>
+
 </html>
